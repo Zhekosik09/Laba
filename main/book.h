@@ -20,6 +20,10 @@ public:
     Book();
     Book(string title, string author);
     Book(string title, string author, int bookId);
+    Book(const Book& other); // Конструктор копіювання
+    Book(Book&& other) noexcept; // Конструктор переміщення
+    Book operator-() const; // Унарний оператор
+    Book operator+(const Book& other) const; // Бінарний оператор
     ~Book(){};
     void addReader(const LibraryUser& user);
     friend ostream& operator<<(ostream& os, const Book& obj);

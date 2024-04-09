@@ -13,4 +13,7 @@ int LibraryUser::getUserId() const {
     return userId;
 }
 
+ostream& operator<<(ostream& os, const LibraryUser& user);
+istream& operator>>(istream& is, LibraryUser& user);
+
 int LibraryUser::NextUserId = 1;
