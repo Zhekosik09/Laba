@@ -4,6 +4,10 @@
 #include "book.h"
 #include "library.h"
 
+#include "libraryemployee.h"
+#include "bookrental.h"
+#include "bookdelivery.h"
+
 using namespace std;
 
 int main() {
@@ -24,6 +28,19 @@ int main() {
     library.addBook(book2);
     book2.addReader(user2);
     cout << book2;
+
+    BookRental rental1(user1, book2);
+    rental1.switchReturnBook(false);
+    cout << "\nRental Information:\n" << endl;
+    cout << rental1;
+
+    LibraryEmployee employee1("Volodia", 27, "Librarian", 2500);
+    cout << "\nEmployee:\n\n";
+    cout << employee1;
+
+    BookDelivery deliver1(book1, "Vitalik", "Chernivtsi, Nebesnoyi sotni, 2");
+    deliver1.deliverBook();
+    deliver1.deliverBook();
 
     return 0;
 }

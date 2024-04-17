@@ -26,6 +26,8 @@ public:
     Book operator+(const Book& other) const; // Бінарний оператор
     ~Book(){};
     void addReader(const LibraryUser& user);
+    string GetTitle() const;
+    string GetAuthor() const;
     friend ostream& operator<<(ostream& os, const Book& obj);
 };
 

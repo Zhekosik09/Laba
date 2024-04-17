@@ -1,6 +1,6 @@
 #include <iostream>
+
 #include "libraryuser.h"
-#include "book.h"
 
 LibraryUser::LibraryUser(string name)
     : name(name), userId(NextUserId++) {}

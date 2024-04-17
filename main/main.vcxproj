@@ -128,13 +128,19 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="book.cpp" />
+    <ClCompile Include="bookdelivery.cpp" />
+    <ClCompile Include="bookrental.cpp" />
     <ClCompile Include="library.cpp" />
+    <ClCompile Include="libraryemployee.cpp" />
     <ClCompile Include="libraryuser.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="book.h" />
+    <ClInclude Include="bookdelivery.h" />
+    <ClInclude Include="bookrental.h" />
     <ClInclude Include="library.h" />
+    <ClInclude Include="libraryemployee.h" />
     <ClInclude Include="libraryuser.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

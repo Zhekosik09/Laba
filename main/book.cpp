@@ -22,6 +22,12 @@ Book::Book(Book&& other) noexcept
 void Book::addReader(const LibraryUser& user) {
     this->readers.push_back(user);
 }
+string Book::GetTitle() const {
+    return title;
+}
+string Book::GetAuthor() const {
+    return author;
+}
 
 ostream& operator<<(ostream& os, const Book& obj) {
     os << "Title: " << obj.title << ", Author: " << obj.author << ", Book ID: " << obj.bookId << endl;
